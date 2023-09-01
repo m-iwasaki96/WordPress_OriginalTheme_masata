@@ -1,20 +1,6 @@
 <?php get_header(); ?>
 <main>
-      <div class="lower-mv aboutPage-mv">
-        <div class="lower-mv__inner">
-          <div class="lower-mv__img">
-            <picture>
-              <source srcset="<?php echo esc_url(get_theme_file_uri("./images/common/aboutPage-mv-sp.jpg")); ?>" media="(max-width: 768px)" />
-              <img src="<?php echo esc_url(get_theme_file_uri("./images/common/aboutPage-mv-pc.jpg")); ?>" alt="ギャラリーに並ぶ車を横から映した様子" />
-            </picture>
-          </div>
-          <div class="lower-mv__title">
-            <h1 class="lower-mv__main-title">about</h1>
-            <p class="lower-mv__sub-title">私たちについて</p>
-          </div>
-        </div>
-      </div>
-
+      <?php get_template_part('/template-parts/fv'); ?>
       <?php if (function_exists('bcn_display')) { ?>
         <div class="commonBreadcrumb">
           <div class="commonBreadcrumb__body breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
@@ -28,13 +14,13 @@
           <div class="lower-message__links">
             <ul class="lower-message__link-items">
               <li class="lower-message__link-item">
-                <a href="#">経営理念</a>
+                <a href="#philosophy">経営理念</a>
               </li>
               <li class="lower-message__link-item">
-                <a href="#">アクセス</a>
+                <a href="#access">アクセス</a>
               </li>
               <li class="lower-message__link-item">
-                <a href="#">会社概要</a>
+                <a href="#company">会社概要</a>
               </li>
             </ul>
           </div>
@@ -52,7 +38,7 @@
         </div>
       </section>
 
-      <div class="philosophy aboutPage-philosophy">
+      <div id="philosophy" class="philosophy aboutPage-philosophy">
         <div class="philosophy__inner inner">
           <div class="philosophy__container">
             <div class="philosophy__text">
@@ -75,13 +61,16 @@
         </div>
       </div>
 
-      <div class="access aboutPage-access">
+      <div id="access" class="access aboutPage-access">
         <div class="access__inner inner">
           <div class="access__title">
             <p class="access__sub-title lower-title__ja">アクセス</p>
             <h2 class="access__main-title lower-title__en">access</h2>
           </div>
-          <p class="access__address">〒220-0011<br class="u-mobile" />神奈川県横浜市西区高島２丁目</p>
+          <p class="access__address">
+            <!-- 〒220-0011<br class="u-mobile" />神奈川県横浜市西区高島２丁目 -->
+            <?php the_field("custom-textarea"); ?>
+          </p>
           <div class="access__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51992.7692380853!2d139.54584434863284!3d35.46598109999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0df6cfd2f1%3A0xbbbca6f36b5235f5!2z5qiq5rWc6aeF!5e0!3m2!1sja!2sjp!4v1691166482517!5m2!1sja!2sjp"
@@ -96,7 +85,7 @@
         </div>
       </div>
 
-      <div class="company aboutPage-company">
+      <div id="company" class="company aboutPage-company">
         <div class="company__inner inner">
           <div class="company__title">
             <p class="company__sub-title lower-title__ja">会社概要</p>
@@ -109,7 +98,7 @@
             </dl>
             <dl class="company__list">
               <dt class="company__label">所在地</dt>
-              <dd class="company__content">〒000-0000&emsp;〇〇県△△市□□区▲▲町0-0-0</dd>
+              <dd class="company__content"><?php the_field("custom-text"); ?></dd>
             </dl>
             <dl class="company__list">
               <dt class="company__label">設立</dt>
@@ -174,32 +163,6 @@
           </li>
         </ul>
       </div>
-
-      <div class="contact">
-        <div class="contact__inner">
-          <div class="contact__wrapper">
-            <div class="contact__contents">
-              <p class="contact__text">輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。</p>
-              <div class="contact__btn">
-                <a href="#">
-                  <span><i class="contact__emailIcon fa-regular fa-envelope"></i>お問い合わせ</span>
-                </a>
-              </div>
-              <div class="contact__btn">
-                <a href="#">
-                  <span><i class="contact__telIcon fa-solid fa-phone"></i>0000-000-000</span>
-                </a>
-              </div>
-              <p class="contact__reception">受付時間 : 火曜日を除く 10：00〜18：00</p>
-            </div>
-            <div class="contact__img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("/images/common/contact_sp.jpg")); ?>" />
-                <img src="<?php echo esc_url(get_theme_file_uri("/images/common/contact_pc.jpg")); ?>" alt="展示されている車を写した様子" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php get_template_part('/template-parts/contact'); ?>
     </main>
 <?php get_footer(); ?>

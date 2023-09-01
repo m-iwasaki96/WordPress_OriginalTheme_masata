@@ -51,7 +51,7 @@
             <h3 class="about__title">about&nbsp;us</h3>
             <p class="about__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</p>
             <div class="about__link">
-              <a href="#">read&nbsp;more</a>
+              <a href="<?php echo esc_url(home_url("/about")) ?>">read&nbsp;more</a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
               <div class="card__contents">
                 <div class="card__text">国を超え、メーカーを超え、高級の本質をお届けする特別な一台との出会いをサポートします。</div>
                 <div class="card__btn">
-                  <a href="#">read&nbsp;more</a>
+                  <a href="<?php echo esc_url(home_url("/service")) ?>">read&nbsp;more</a>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@
               <div class="card__contents">
                 <div class="card__text">高度な輸入車修理技術と数多くの修理実績、熟練の技術・設備であなたの愛車を完全に直します。</div>
                 <div class="card__btn">
-                  <a href="#">read&nbsp;more</a>
+                  <a href="<?php echo esc_url(home_url("/service")) ?>">read&nbsp;more</a>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@
               <div class="card__contents">
                 <div class="card__text">輸入車の取り扱いが県内トップクラス。専門の整備工場へ任せたいなら弊社へご相談ください。</div>
                 <div class="card__btn">
-                  <a href="#">read&nbsp;more</a>
+                  <a href="<?php echo esc_url(home_url("/service")) ?>">read&nbsp;more</a>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@
               <?php endwhile; ?>
               <?php wp_reset_postdata(); ?>
               <div class="works__link">
-                <a href="#">read&nbsp;more</a>
+                <a href="<?php echo esc_url(home_url("/works")) ?>">read&nbsp;more</a>
               </div>
             </div>
             <?php else : ?>
@@ -234,7 +234,7 @@
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
                 <div class="news__link">
-                  <a href="#">read&nbsp;more</a>
+                  <a href="<?php echo esc_url(home_url("/news")) ?>">read&nbsp;more</a>
                 </div>
               </div>
             <?php else : ?>
@@ -244,31 +244,6 @@
         </div>
       </section>
 
-      <div class="contact">
-        <div class="contact__inner">
-          <div class="contact__wrapper">
-            <div class="contact__contents">
-              <p class="contact__text">輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。</p>
-              <div class="contact__btn">
-                <a href="#">
-                  <span><i class="contact__emailIcon fa-regular fa-envelope"></i>お問い合わせ</span>
-                </a>
-              </div>
-              <div class="contact__btn">
-                <a href="#">
-                  <span><i class="contact__telIcon fa-solid fa-phone"></i>0000-000-000</span>
-                </a>
-              </div>
-              <p class="contact__reception">受付時間 : 火曜日を除く 10：00〜18：00</p>
-            </div>
-            <div class="contact__img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("./images/common/contact_sp.jpg")); ?>" />
-                <img src="<?php echo esc_url(get_theme_file_uri("./images/common/contact_pc.jpg")); ?>" alt="展示されている車を写した様子" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php get_template_part('/template-parts/contact'); ?>
     </main>
 <?php get_footer(); ?>

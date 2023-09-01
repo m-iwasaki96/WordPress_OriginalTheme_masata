@@ -3,25 +3,25 @@
         <nav class="footer__nav">
           <ul class="footer__items">
             <li class="footer__item">
-              <a href="#">top</a>
+              <a href="<?php echo esc_url(home_url("/")) ?>">top</a>
             </li>
             <li class="footer__item">
-              <a href="#">about</a>
+              <a href="<?php echo esc_url(home_url("/about")) ?>">about</a>
             </li>
             <li class="footer__item">
-              <a href="#">service</a>
+              <a href="<?php echo esc_url(home_url("/service")) ?>">service</a>
             </li>
             <li class="footer__item">
-              <a href="#">works</a>
+              <a href="<?php echo esc_url(home_url("/works")) ?>">works</a>
             </li>
             <li class="footer__item">
-              <a href="#">news</a>
+              <a href="<?php echo esc_url(home_url("/news")) ?>">news</a>
             </li>
             <li class="footer__item">
-              <a href="#">contact</a>
+              <a href="<?php echo esc_url(home_url("/contact")) ?>">contact</a>
             </li>
             <li class="footer__item">
-              <a href="#">プライバシーポリシー</a>
+              <a href="<?php echo esc_url(home_url("/")) ?>">プライバシーポリシー</a>
             </li>
           </ul>
         </nav>

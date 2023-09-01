@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-      <div class="lower-mv servicePage-mv">
+      <div class="lower-mv lowerLayout">
         <div class="lower-mv__inner">
           <div class="lower-mv__img">
             <picture>
@@ -28,10 +28,10 @@
           <div class="lower-message__links">
             <ul class="lower-message__link-items">
               <li class="lower-message__link-item">
-                <a href="#">購入サポート</a>
+                <a href="#support">購入サポート</a>
               </li>
               <li class="lower-message__link-item">
-                <a href="#">修理・整備</a>
+                <a href="#maintenance">修理・整備</a>
               </li>
               <li class="lower-message__link-item">
                 <a href="#">車検・点検</a>
@@ -50,7 +50,7 @@
       </section>
 
       <div class="servicePage-content">
-        <section class="service-menu">
+        <section id="support" class="service-menu">
           <div class="service-menu__inner inner">
             <div class="service-menu__top">
               <div class="service-menu__body">
@@ -77,7 +77,7 @@
           </div>
         </section>
 
-        <section class="service-menu">
+        <section id="maintenance" class="service-menu">
           <div class="service-menu__inner inner">
             <div class="service-menu__top">
               <div class="service-menu__body">
@@ -104,7 +104,7 @@
           </div>
         </section>
 
-        <section class="service-menu">
+        <section id="inspection" class="service-menu">
           <div class="service-menu__inner inner">
             <div class="service-menu__top">
               <div class="service-menu__body">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <main>
-      <div class="lower-mv servicePage-mv">
+      <div class="lower-mv lowerLayout">
         <div class="lower-mv__inner">
           <div class="lower-mv__img">
             <picture>
@@ -31,15 +31,19 @@
               <div class="list__categories">
                 <div class="list__category-items">
                 <?php
+                if (!empty (get_queried_object()->term_id)) {
                   $current_term_id = get_queried_object()->term_id;
-                  $terms = get_terms(array(
-                      // 表示するタクソノミースラッグを記述
-                      'taxonomy' => 'genre',
-                      'orderby' => 'name',
-                      'order'   => 'ASC',
-                      // 表示するタームの数を指定
-                      'number'  => 3
-                  ));
+                } else {
+                  $current_term_id = "";
+                }
+                $terms = get_terms(array(
+                    // 表示するタクソノミースラッグを記述
+                    'taxonomy' => 'genre',
+                    'orderby' => 'name',
+                    'order'   => 'ASC',
+                    // 表示するタームの数を指定
+                    'number'  => 3
+                ));
 
                   // カスタム投稿一覧ページへのURL
                   $home_class = (is_post_type_archive()) ? 'is-active' : '';
@@ -54,7 +58,7 @@
                   echo sprintf(esc_html__('%s', 'textdomain'), $home_link);
 
                   // タームのリンク
-                  if ($terms) {
+                  if (!empty ($terms)) {
                     foreach ($terms as $term) {
                         // カレントクラスに付与するクラスを指定できる
                         $term_class = ($current_term_id === $term->term_id) ? 'is-active' : '';
@@ -127,32 +131,6 @@
         </div>
       </div>
 
-      <div class="contact">
-        <div class="contact__inner">
-          <div class="contact__wrapper">
-            <div class="contact__contents">
-              <p class="contact__text">輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。</p>
-              <div class="contact__btn">
-                <a href="#">
-                  <span><i class="contact__emailIcon fa-regular fa-envelope"></i>お問い合わせ</span>
-                </a>
-              </div>
-              <div class="contact__btn">
-                <a href="#">
-                  <span><i class="contact__telIcon fa-solid fa-phone"></i>0000-000-000</span>
-                </a>
-              </div>
-              <p class="contact__reception">受付時間 : 火曜日を除く 10：00〜18：00</p>
-            </div>
-            <div class="contact__img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("./images/common/contact_sp.jpg")); ?>" />
-                <img src="<?php echo esc_url(get_theme_file_uri("./images/common/contact_pc.jpg")); ?>" alt="展示されている車を写した様子" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <?php get_template_part('/template-parts/contact'); ?>
   </main>
 <?php get_footer(); ?>

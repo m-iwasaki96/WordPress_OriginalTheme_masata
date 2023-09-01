@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php if (is_404()) : ?>
+      <meta http-equiv="refresh" content=" 3; url=<?php echo esc_url(home_url("")); ?>">
+    <?php endif; ?>
     <?php wp_head(); ?>
 </head>
 
@@ -14,27 +17,27 @@
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="#" class="header__link"><img src="<?php echo esc_url(get_theme_file_uri("./images/common/logo.png")); ?>" alt="ExciteCode" /></a>
+          <a href="<?php echo esc_url(home_url("/")) ?>" class="header__link"><img src="<?php echo esc_url(get_theme_file_uri("./images/common/logo.png")); ?>" alt="ExciteCode" /></a>
         </h1>
         <nav class="header__nav u-desktop">
           <ul class="header__items">
             <li class="header__item">
-              <a href="#">top</a>
+              <a href="<?php echo esc_url(home_url("/")) ?>">top</a>
             </li>
             <li class="header__item">
-              <a href="#">about</a>
+              <a href="<?php echo esc_url(home_url("/about")) ?>">about</a>
             </li>
             <li class="header__item">
-              <a href="#">service</a>
+              <a href="<?php echo esc_url(home_url("/service")) ?>">service</a>
             </li>
             <li class="header__item">
-              <a href="#">works</a>
+              <a href="<?php echo esc_url(home_url("/works")) ?>">works</a>
             </li>
             <li class="header__item">
-              <a href="#">news</a>
+              <a href="<?php echo esc_url(home_url("/news")) ?>">news</a>
             </li>
             <li class="header__item header__item--reverse">
-              <a href="#">
+              <a href="<?php echo esc_url(home_url("/contact")) ?>">
                 <i class="header__contactIcon fa-regular fa-envelope"></i>contact
               </a>
             </li>
@@ -54,25 +57,25 @@
           <div class="header__drawer-inner js-drawer__inner">
             <ul class="header__drawer-items">
               <li class="header__drawer-item">
-                <a href="#">top</a>
+                <a href="<?php echo esc_url(home_url("/")) ?>">top</a>
               </li>
               <li class="header__drawer-item">
-                <a href="#">about</a>
+                <a href="<?php echo esc_url(home_url("/about")) ?>">about</a>
               </li>
               <li class="header__drawer-item">
-                <a href="#">service</a>
+                <a href="<?php echo esc_url(home_url("/service")) ?>">service</a>
               </li>
               <li class="header__drawer-item">
-                <a href="#">works</a>
+                <a href="<?php echo esc_url(home_url("/works")) ?>">works</a>
               </li>
               <li class="header__drawer-item">
-                <a href="#">news</a>
+                <a href="<?php echo esc_url(home_url("/news")) ?>">news</a>
               </li>
               <li class="header__drawer-item">
-                <a href="#">contact</a>
+                <a href="<?php echo esc_url(home_url("/contact")) ?>">contact</a>
               </li>
               <li class="header__drawer-item">
-                <a href="#">プライバシーポリシー</a>
+                <a href="<?php echo esc_url(home_url("/")) ?>">プライバシーポリシー</a>
               </li>
             </ul>
             <div class="header__drawer-icons">
