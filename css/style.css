@@ -189,6 +189,10 @@ a {
 	margin-top: 1.875rem;
 }
 
+.servicePage-contact {
+	margin-top: 1.875rem;
+}
+
 .servicePage-content {
 	margin-top: 3.125rem;
 }
@@ -223,7 +227,12 @@ a {
 }
 
 .worksPage-body {
+	margin-bottom: 5rem;
 	margin-top: 1.875rem;
+}
+
+.worksPage-contact {
+	margin-top: 7.5rem;
 }
 
 .about__img {
@@ -276,7 +285,7 @@ a {
 
 .about__link a {
 	-webkit-text-decoration: none;
-	color: #001E63;
+	color: #003A27;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -289,8 +298,8 @@ a {
 }
 
 .about__link a::after {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -307,7 +316,7 @@ a {
 }
 
 .about__link a::before {
-	background-color: #001E63;
+	background-color: #003A27;
 	bottom: -3px;
 	content: "";
 	height: 1px;
@@ -379,6 +388,7 @@ a {
 .card__title {
 	padding: 3.125rem 1.875rem;
 	position: absolute;
+	text-shadow: 1px 1px 1px #626262;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -420,9 +430,9 @@ a {
 }
 
 .card__btn a {
-	border: 1px solid #011950;
+	border: 1px solid #003A27;
 	border-radius: 4px;
-	color: #011950;
+	color: #003A27;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -434,8 +444,8 @@ a {
 }
 
 .card__btn a::after {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -452,6 +462,8 @@ a {
 }
 
 .commonBreadcrumb {
+	margin-inline: auto;
+	max-width: 90rem;
 	padding-left: 0.625rem;
 	padding-right: 0.625rem;
 	padding-top: 0.625rem;
@@ -502,9 +514,12 @@ a {
 }
 
 .contact__contents {
-	background-color: #011950;
-	padding: 5rem 4.75rem;
-	text-align: center;
+	align-items: center;
+	background-color: #00483C;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5rem 0;
 }
 
 .contact__text {
@@ -551,7 +566,7 @@ a {
 }
 
 .contact__btn:hover span {
-	color: #011950;
+	color: #003A27;
 }
 
 .contact__btn a::before {
@@ -662,7 +677,7 @@ a {
 
 .contactConfirm__back-button,
 .contactConfirm__submit-input {
-	border: 1px solid #011950;
+	border: 1px solid #003A27;
 	border-radius: 4px;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
@@ -672,12 +687,12 @@ a {
 }
 
 .contactConfirm__back-button {
-	color: #011950;
+	color: #003A27;
 	padding: 0.75rem 3.875rem;
 }
 
 .contactConfirm__submit-input {
-	background-color: #011950;
+	background-color: #003A27;
 	color: #fff;
 	padding: 0.75rem 3rem;
 }
@@ -773,7 +788,7 @@ a {
 
 .flow-text__message {
 	animation: loopText 10s linear infinite;
-	color: #011950;
+	color: #003A27;
 	font-family: Noto Sans JP;
 	font-size: 5.25rem;
 	font-style: normal;
@@ -783,7 +798,7 @@ a {
 }
 
 .footer {
-	background-color: #001135;
+	background-color: #003A27;
 	padding: 3.125rem 3.125rem 1.875rem;
 	width: 100%;
 }
@@ -959,7 +974,7 @@ a {
 }
 
 .form__submit-input {
-	background-color: #011950;
+	background-color: #003A27;
 	border-radius: 4px;
 	color: #fff;
 	display: inline-block;
@@ -1023,7 +1038,7 @@ a {
 }
 
 .header__item.header__item--reverse {
-	background-color: #001135;
+	background-color: #003A27;
 	margin-left: 1.5625rem;
 }
 
@@ -1088,7 +1103,7 @@ a {
 }
 
 .header__drawer {
-	background-color: #001135;
+	background-color: #003A27;
 	display: none;
 	height: 100vh;
 	left: 0;
@@ -1169,7 +1184,7 @@ a {
 }
 
 .header__drawer-circle {
-	background-color: #001135;
+	background-color: #003A27;
 	border-radius: 50%;
 	bottom: -50px;
 	height: 100px;
@@ -1311,7 +1326,7 @@ a {
 }
 
 .list__category-item.is-active {
-	color: #001E63;
+	color: #003A27;
 }
 
 .list__category-item::before {
@@ -1326,10 +1341,11 @@ a {
 }
 
 .list__category-item.is-active::before {
-	background-color: #001E63;
+	background-color: #003A27;
 }
 
 .list__menu-items {
+	padding-bottom: 2.5rem;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
@@ -1344,12 +1360,26 @@ a {
 	padding: 1.25rem 0;
 }
 
+.list__meta {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.625rem;
+}
+
 .list__item-date {
 	color: #A9A9A9;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.625rem;
 	font-weight: 700;
 	line-height: 1.4;
+}
+
+.list__label-wrapper {
+	-moz-column-gap: 0.25rem;
+	column-gap: 0.25rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .list__label {
@@ -1369,30 +1399,23 @@ a {
 
 .list___text {
 	color: #000;
-	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 500;
 	line-height: 2;
 	margin-top: 1.25rem;
-	position: relative;
 }
 
-.list___text::before {
-	background-color: #001E63;
-	bottom: -3px;
-	content: "";
-	height: 1px;
-	left: 0;
-	position: absolute;
-	transform: scale(0, 1);
-	transform-origin: left top;
-	transition: transform 0.3s;
-	width: 100%;
+.list___text span {
+	background-image: linear-gradient(90deg, #000, #000);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 0 1px;
+	transition: background-size 0.6s;
 }
 
-.list__menu-item:hover .list___text::before {
-	transform: scale(1, 1);
+.list__menu-item:hover .list___text span {
+	background-size: 100% 1px;
 }
 
 .lower-message__inner.inner {
@@ -1409,7 +1432,7 @@ a {
 }
 
 .lower-message__link-item a {
-	color: #011950;
+	color: #003A27;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -1418,14 +1441,14 @@ a {
 }
 
 .lower-message__link-item a::after {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
 	margin-left: 10px;
 	position: absolute;
-	top: 5px;
+	top: 0;
 	transform: rotate(135deg);
 	width: 7px;
 }
@@ -1500,7 +1523,7 @@ a {
 }
 
 .lower-title__ja {
-	color: #001E63;
+	color: #00483C;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -1518,6 +1541,8 @@ a {
 
 .lowerArticle-head {
 	margin-top: 5.625rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .mv {
@@ -1539,16 +1564,16 @@ a {
 }
 
 .mv__js-swiper {
-	height: 80.2675%;
+	height: calc(100vh - 7.5rem);
 }
 
 .mv__swiper-wrapper {
-	height: 100%;
+	height: inherit;
 }
 
 .mv__img {
 	display: block;
-	height: 100%;
+	height: inherit;
 }
 
 .mv__img img {
@@ -1585,7 +1610,7 @@ a {
 }
 
 .news__link a {
-	color: #001E63;
+	color: #003A27;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -1598,8 +1623,8 @@ a {
 }
 
 .news__link a::after {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -1616,7 +1641,7 @@ a {
 }
 
 .news__link a::before {
-	background-color: #001E63;
+	background-color: #003A27;
 	bottom: -3px;
 	content: "";
 	height: 1px;
@@ -1727,7 +1752,7 @@ a {
 .newsArticle__detail-content li {
 	color: #000;
 	font-family: Noto Sans JP;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -1743,9 +1768,9 @@ a {
 }
 
 .newsArticle__btn a {
-	border: 1px solid #011950;
+	border: 1px solid #003A27;
 	border-radius: 4px;
-	color: #011950;
+	color: #003A27;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -1763,8 +1788,8 @@ a {
 }
 
 .newsArticle__btn--before a::before {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -1776,8 +1801,8 @@ a {
 }
 
 .newsArticle__btn--after a::after {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -1789,7 +1814,7 @@ a {
 }
 
 .philosophy__inner.inner {
-	background-color: linear-gradient(180deg, #F8F8F8 0%, #F8F8F8 89.6805%, transparent 89.6805%, transparent 100%);
+	background-color: #F8F8F8;
 }
 
 .philosophy__text {
@@ -1827,14 +1852,6 @@ a {
 	object-fit: cover;
 }
 
-.post {
-	margin-top: 4.5rem;
-}
-
-.post__header {
-	padding-bottom: 2.1875rem;
-}
-
 .service-menu {
 	padding-bottom: 3.125rem;
 }
@@ -1849,7 +1866,7 @@ a {
 }
 
 .service-menu__number {
-	color: #001E63;
+	color: #003A27;
 	font-family: "Oswald";
 	font-size: 2rem;
 	font-weight: 700;
@@ -1945,7 +1962,7 @@ a {
 }
 
 .sidebar__menu-label {
-	background-color: #001135;
+	background-color: #003A27;
 	margin-left: -5px;
 	margin-right: -5px;
 	margin-top: 2.5rem;
@@ -2061,8 +2078,8 @@ a {
 }
 
 .thanks__btn a {
-	background-color: #011950;
-	border: 1px solid #011950;
+	background-color: #003A27;
+	border: 1px solid #003A27;
 	border-radius: 4px;
 	color: #fff;
 	display: inline-block;
@@ -2111,14 +2128,16 @@ a {
 .works__img img {
 	-o-object-fit: cover;
 	aspect-ratio: 120/90;
+	height: 100%;
 	object-fit: cover;
+	width: 100%;
 }
 
 .works__contents {
 	width: 53.22%;
 }
 
-.works_label {
+.works__label {
 	background-color: #F3F3F3;
 	color: #626262;
 	display: inline-block;
@@ -2129,32 +2148,29 @@ a {
 	padding: 0.3125rem 0.9375rem;
 }
 
+.works__label + .works__label {
+	margin-left: 0.5rem;
+}
+
 .works__item-title {
 	color: #000;
-	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 500;
 	line-height: 2;
 	margin-top: 1rem;
-	position: relative;
 }
 
-.works__item-title::before {
-	background-color: #001E63;
-	bottom: -3px;
-	content: "";
-	height: 1px;
-	left: 0;
-	position: absolute;
-	transform: scale(0, 1);
-	transform-origin: left top;
-	transition: transform 0.3s;
-	width: 100%;
+.works__item-title span {
+	background-image: linear-gradient(90deg, #000, #000);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 0 1px;
+	transition: background-size 0.6s;
 }
 
-.works__item:hover .works__item-title::before {
-	transform: scale(1, 1);
+.works__item:hover .works__item-title span {
+	background-size: 100% 1px;
 }
 
 .works__text {
@@ -2182,7 +2198,7 @@ a {
 }
 
 .works__link a {
-	color: #001E63;
+	color: #003A27;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -2194,8 +2210,8 @@ a {
 }
 
 .works__link a::after {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -2212,7 +2228,7 @@ a {
 }
 
 .works__link a::before {
-	background-color: #001E63;
+	background-color: #003A27;
 	bottom: -3px;
 	content: "";
 	height: 1px;
@@ -2284,7 +2300,35 @@ a {
 	width: 100%;
 }
 
-.worksDetail__text {
+.worksDetail__content h2 {
+	background-color: #F8F8F8;
+	border-left: 3px solid #003A27;
+	color: #000;
+	font-family: "Roboto", "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.4375;
+	margin-top: 2.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0.6875rem;
+	padding-top: 0.5rem;
+}
+
+.worksDetail__content h3 {
+	-o-border-image: linear-gradient(90deg, #003A27 0%, #003A27 39.6825%, #E4E4E4 39.6825%, #E4E4E4 100%);
+	border-bottom: 1px solid;
+	border-image: linear-gradient(90deg, #003A27 0%, #003A27 39.6825%, #E4E4E4 39.6825%, #E4E4E4 100%);
+	border-image-slice: 1;
+	color: #000;
+	font-family: "Roboto", "Noto Sans JP", sans-serif;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.4444444444;
+	margin-top: 2.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.worksDetail__content p {
 	color: #000;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -2293,15 +2337,30 @@ a {
 	margin-top: 2.625rem;
 }
 
+.worksDetail__content ul {
+	margin-top: 1.375rem;
+}
+
+.worksDetail__content li {
+	color: #000;
+	font-family: Noto Sans JP;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
 .worksDetail__btn {
 	margin-top: 2.5rem;
 	text-align: center;
 }
 
 .worksDetail__btn a {
-	border: 1px solid #001E63;
+	border: 1px solid #003A27;
 	border-radius: 4px;
-	color: #001E63;
+	color: #003A27;
 	display: inline-block;
 	font-family: "Roboto", "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
@@ -2313,8 +2372,8 @@ a {
 }
 
 .worksDetail__btn a::before {
-	border-right: 2px solid #001E63;
-	border-top: 2px solid #001E63;
+	border-right: 2px solid #003A27;
+	border-top: 2px solid #003A27;
 	content: "";
 	display: inline-block;
 	height: 7px;
@@ -2383,6 +2442,10 @@ html {
 	margin-top: 3.75rem;
 }
 
+.servicePage-contact {
+	margin-top: 5.625rem;
+}
+
 .servicePage-content {
 	margin-top: 7.5rem;
 }
@@ -2413,6 +2476,11 @@ html {
 
 .worksPage-body {
 	margin-top: 3.75rem;
+}
+
+.worksPage-contact {
+	margin-bottom: 7.5rem;
+	margin-top: 5rem;
 }
 
 .about__inner {
@@ -2517,13 +2585,6 @@ html {
 }
 
 .contact__contents {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-left: 12.15%;
-	padding-right: 0;
-	text-align: left;
-	text-align: initial;
 	width: 43.1%;
 }
 
@@ -2533,8 +2594,7 @@ html {
 }
 
 .contact__btn {
-	margin-left: 0;
-	margin-left: initial;
+	margin-inline: auto;
 	margin-top: 1.5625rem;
 	width: 14.6875rem;
 }
@@ -2837,6 +2897,7 @@ html {
 
 .list__menu-items {
 	border-left: 1px solid #E2E2E2;
+	padding-bottom: 3.5rem;
 	padding-left: 3.75rem;
 	padding-right: 0;
 	width: 76%;
@@ -2851,9 +2912,18 @@ html {
 	padding: 1.875rem 0;
 }
 
+.list__meta {
+	gap: 1.875rem;
+}
+
 .list__item-date {
 	font-size: 0.75rem;
 	line-height: 1.4166666667;
+}
+
+.list__label-wrapper {
+	-moz-column-gap: 1.25rem;
+	column-gap: 1.25rem;
 }
 
 .list__label {
@@ -2875,6 +2945,10 @@ html {
 .lower-message__link-item a {
 	font-size: 1rem;
 	line-height: 1.4375;
+}
+
+.lower-message__link-item a::after {
+	top: 5px;
 }
 
 .lower-message__main-message {
@@ -2937,13 +3011,8 @@ html {
 	width: 80.7812%;
 }
 
-.mv__swiper-wrapper {
-	height: 100vh;
-}
-
 .mv__img {
-	height: auto;
-	height: initial;
+	height: inherit;
 }
 
 .mv__img img {
@@ -2952,7 +3021,6 @@ html {
 }
 
 .mv__body {
-	align-items: bottom;
 	display: flex;
 	justify-content: center;
 	padding-left: 6.9444%;
@@ -3106,10 +3174,6 @@ html {
 .philosophy__img img {
 	aspect-ratio: 360/535;
 	height: 100%;
-}
-
-.post__header {
-	padding-bottom: 2.5rem;
 }
 
 .service-menu__inner.inner {
@@ -3293,10 +3357,14 @@ html {
 	width: 66.66%;
 }
 
-.works_label {
+.works__label {
 	font-size: 0.6875rem;
 	line-height: 1.4545454545;
 	padding: 0.25rem 1.125rem;
+}
+
+.works__label + .works__label {
+	margin-left: 1.25rem;
 }
 
 .works__item-title {
@@ -3344,7 +3412,17 @@ html {
 	aspect-ratio: 840/471;
 }
 
-.worksDetail__text {
+.worksDetail__content h2 {
+	font-size: 1.375rem;
+	line-height: 1.4545454545;
+	padding-left: 0.875rem;
+}
+
+.worksDetail__content h3 {
+	margin-top: 4.5rem;
+}
+
+.worksDetail__content p {
 	font-size: 1rem;
 	line-height: 2;
 	margin-left: auto;
@@ -3352,8 +3430,12 @@ html {
 	max-width: 42.5rem;
 }
 
-.worksDetail__text + .worksDetail__text {
+.worksDetail__content p + .worksDetail__content p {
 	margin-top: 0;
+}
+
+.worksDetail__content ul {
+	margin-top: 4.5rem;
 }
 
 .worksDetail__btn {
@@ -3443,12 +3525,15 @@ to {
   background-color: #000;
 }
 
-/* タイトルが長くなった場合のパンくずリストのCSS 要検討 */
+/* タイトルが長くなった場合のパンくずリストのCSS */
 .commonBreadcrumb .post {
+	display: inline-block;
+	max-width: 100px;
+	width: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: top;
 }
 
 /* ===============================================
@@ -3515,12 +3600,6 @@ to {
   background-color: #001e63;
 }
 
-/* .page-numbers.dots,
-.page-numbers.prev,
-.page-numbers.next {
-  border: none;
-} */
-
 /* ===============================================
 月別アーカイブスタイル用
 =============================================== */
@@ -3538,5 +3617,19 @@ to {
   border-top: 1px solid #E4E4E4;
 }
 
+/* ===============================================
+コンタクトフォーム調整
+=============================================== */
+.form__submit-button > p {
+	text-align: center;
+}
+
+.form__submit-button .wpcf7-spinner {
+	display: none;
+}
+
+.contactConfirm__buttons .wpcf7-spinner {
+	display: none;
+}
 
 /*# sourceMappingURL=style.css.map */

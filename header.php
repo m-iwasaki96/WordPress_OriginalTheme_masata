@@ -17,7 +17,7 @@
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="<?php echo esc_url(home_url("/")) ?>" class="header__link"><img src="<?php echo esc_url(get_theme_file_uri("./images/common/logo.png")); ?>" alt="ExciteCode" /></a>
+          <a href="<?php echo esc_url(home_url("/")) ?>" class="header__link"><img src="<?php echo esc_url(get_theme_file_uri("./images/common/logo.png")); ?>" alt="ExciteTravel" /></a>
         </h1>
         <nav class="header__nav u-desktop">
           <ul class="header__items">
@@ -52,7 +52,7 @@
 
         <div class="header__drawer js-drawer">
           <div class="header__drawer-logo">
-            <img src="./assets/images/common/reverse-logo.png" alt="ExciteCode">
+            <img src="<?php echo esc_url(get_theme_file_uri("./images/common/reverse-logo.png")); ?>" alt="ExciteCode">
           </div>
           <div class="header__drawer-inner js-drawer__inner">
             <ul class="header__drawer-items">

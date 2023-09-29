@@ -15,7 +15,13 @@
     </div>
   </div>
 
-  <div class="breadcrumb">パンくずリスト</div>
+  <?php if (function_exists('bcn_display')) { ?>
+    <div class="commonBreadcrumb">
+      <div class="commonBreadcrumb__body breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+        <?php bcn_display(); ?>
+      </div>
+    </div>
+  <?php } ?>
 
   <div class="contactForm">
     <div class="contactForm__inner inner">

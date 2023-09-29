@@ -33,7 +33,7 @@
             近日中に折り返しご連絡いたします。<br class="u-mobile">今しばらくお待ちくださいますよう、よろしくお願い申し上げます。<br class="u-mobile">万が一、ご回答メールが届かない場合は、送信トラブル等の可能性もありますので、大変お手数ではございますが、もう一度フォームよりお問い合わせいただくか、お電話にてお問い合わせをお願いいたします。<br>今後ともご愛顧賜りますようよろしくお願い申し上げます。
           </p>
           <div class="thanks__btn">
-            <a href="#">TOPへ戻る</a>
+            <a href="<?php echo esc_url(home_url("/")) ?>">TOPへ戻る</a>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
         <div class="contact__inner">
           <div class="contact__wrapper">
             <div class="contact__contents">
-              <p class="contact__text">輸入車の購入や修理のご相談など<br />お気軽にお問い合わせください。</p>
+              <p class="contact__text">国内・海外旅行や留学のご相談など<br />お気軽にお問い合わせください。</p>
               <div class="contact__btn">
                 <a href="#">
                   <i class="contact__emailIcon fa-regular fa-envelope"></i>お問い合わせ
@@ -58,7 +58,7 @@
             <div class="contact__img">
             <picture>
               <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("./images/common/contact_sp.jpg")); ?>" />
-              <img src="<?php echo esc_url(get_theme_file_uri("./images/common/contact_pc.jpg")); ?>" alt="展示されている車を写した様子" />
+              <img src="<?php echo esc_url(get_theme_file_uri("./images/common/contact_pc.jpg")); ?>" alt="晴天のひまわり畑に佇む女性の様子" />
             </picture>
             </div>
           </div>
