@@ -14,7 +14,7 @@ jQuery(function ($) {
     $(".js-circle").toggleClass('circleactive');
   });
   $(".header__drawer-item a").click(function () {
-    $(".js-drawer, js-drawer__inner").removeClass('panelactive');
+    $(".js-drawer, .js-drawer__inner").removeClass('panelactive');
     $(".js-circle").removeClass('circleactive');
   });
 
