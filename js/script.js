@@ -4,7 +4,7 @@ jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
   // ハンバーガーメニュー
   $(".js-hamburger, .js-drawer, .js-drawer a").click(function () {
-    $(".js-hamburger").toggleClass("is-active");
+    $(".js-hamburger, body").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
   });
 
