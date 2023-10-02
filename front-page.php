@@ -44,7 +44,7 @@
 
     <section class="about topAbout">
       <div class="about__inner inner">
-        <div class="about__img">
+        <div class="about__img js-image">
           <img src="<?php echo esc_url(get_theme_file_uri("./images/common/about.jpg")); ?>" alt="町屋の並ぶ路地を着物と和傘で手を取って歩くカップルの後ろ姿">
         </div>
         <div class="about__contents">

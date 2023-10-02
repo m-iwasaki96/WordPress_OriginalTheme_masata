@@ -72,30 +72,35 @@ mm.add('(min-width:769px)', function () {
       ease: custom,
       scrollTrigger: newsTrigger
     });
-    gsap.fromTo('.about__img', {
-      opacity: 0,
-      x: -30
-    }, {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '.about__img',
-        start: 'top 70%'
-      }
+
+    let images=document.querySelectorAll('.js-image');
+    images.forEach((image)=>{
+      // divタグを生成
+      let coverDiv = document.createElement('div');
+      coverDiv.classList.add('js-image-cover');
+      image.appendChild(coverDiv);
+
+      gsap.fromTo(
+        image.querySelector('.js-image-cover'),
+        {
+          skewX:10,
+          scale:1.2,
+          xPercent:0,
+        },
+        {
+          skewX:10,
+          scale:1.2,
+          xPercent:-120,
+          duration:1,
+          ease:Power3.easeOut,
+          scrollTrigger:{
+            trigger:image,
+            start:"top bottom",
+          }
+        }
+      );
     });
-    gsap.fromTo('.about__contents', {
-      opacity: 0,
-      x: 30
-    }, {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '.about__contents',
-        start: 'top 70%'
-      }
-    });
+
     gsap.fromTo('.service__card', {
       opacity: 0,
       y: 20
