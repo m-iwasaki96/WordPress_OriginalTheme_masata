@@ -13,7 +13,7 @@ jQuery(function ($) {
     $(".js-drawer, .js-drawer__inner").toggleClass('panelactive');
     $(".js-circle").toggleClass('circleactive');
   });
-  $(".header__drawer-item a").click(function () {
+  $(".header__drawer-item a, .js-drawer").click(function () {
     $(".js-drawer, .js-drawer__inner").removeClass('panelactive');
     $(".js-circle").removeClass('circleactive');
   });
