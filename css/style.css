@@ -1009,7 +1009,7 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 9999;
+	z-index: 8000;
 }
 
 .header__inner {
@@ -1071,7 +1071,7 @@ a {
 	right: 1.875rem;
 	top: 2.0625rem;
 	width: 1.5625rem;
-	z-index: 9999;
+	z-index: 8000;
 }
 
 .header__hamburger.is-active {
@@ -1439,6 +1439,35 @@ body.is-active {
 
 .list__menu-item:hover .list___text span {
 	background-size: 100% 1px;
+}
+
+.loader {
+	display: flex;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 9999;
+}
+
+.loader__line {
+	background: #003A27;
+	height: 100%;
+	margin-left: -0.0625rem;
+	width: calc(33.3333333333% + 1px);
+}
+
+.loader__line:nth-of-type(2) {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.loader__line img {
+	-o-object-fit: cover;
+	aspect-ratio: 258/180;
+	object-fit: cover;
 }
 
 .lower-message__inner.inner {

@@ -1,5 +1,13 @@
 <?php get_header(); ?>
   <main class="js-top js-listPage">
+    <div class="loader">
+      <div class="loader__line"></div>
+      <div class="loader__line">
+        <img src="<?php echo esc_url(get_theme_file_uri("./images/common/loader-logo.png")); ?>" alt="ExciteTravel">
+      </div>
+      <div class="loader__line"></div>
+    </div>
+
     <section class="mv">
       <div class="mv__inner">
         <div class="mv__container">
