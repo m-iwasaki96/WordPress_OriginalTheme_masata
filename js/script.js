@@ -224,4 +224,25 @@ mm.add('(min-width:769px)', function () {
       duration: 2
     });
   }
+
+  if(document.querySelector('.js-maskImg') !== null) {
+    let maskImgs=document.querySelectorAll('.js-maskImg');
+    maskImgs.forEach ((maskImg)=>{
+      gsap.fromTo (
+        maskImg,
+        {
+        },
+        {
+          scrollTrigger:{
+            trigger:maskImg,
+            start:"top bottom",
+            once:true,
+            toggleClass:{
+              targets:maskImg,
+              className:"is-open"
+            }
+          }
+        }
+    )});
+  }
 });
