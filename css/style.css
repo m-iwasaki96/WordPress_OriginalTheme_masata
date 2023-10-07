@@ -275,7 +275,7 @@ a {
 	right: 0;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: -1;
 }
 
 .about__title {
@@ -2567,6 +2567,10 @@ html {
 
 .about__img::before {
 	padding-top: 87.2727%;
+}
+
+.js-image-cover {
+	z-index: 1;
 }
 
 .about__contents {
