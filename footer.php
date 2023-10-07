@@ -26,7 +26,7 @@
           </ul>
         </nav>
         <div class="footer__logo">
-          <a href="#" class="footer__link">
+          <a href="<?php echo esc_url(home_url("/")) ?>" class="footer__link">
             <img src="<?php echo esc_url(get_theme_file_uri("./images/common/reverse-logo.png")); ?>" alt="ExciteTravel">
           </a>
         </div>
