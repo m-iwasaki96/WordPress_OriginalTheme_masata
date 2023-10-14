@@ -34,7 +34,7 @@
               <a href="#maintenance">訪日旅行</a>
             </li>
             <li class="lower-message__link-item">
-              <a href="#">海外留学</a>
+              <a href="#inspection">海外留学</a>
             </li>
           </ul>
         </div>

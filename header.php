@@ -14,7 +14,7 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header class="header">
+    <header class="header js-header">
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="<?php echo esc_url(home_url("/")) ?>" class="header__link"><img src="<?php echo esc_url(get_theme_file_uri("./images/common/logo.png")); ?>" alt="ExciteTravel" /></a>

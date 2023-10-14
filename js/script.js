@@ -50,10 +50,26 @@ jQuery(function ($) {
     });
     $(this).addClass('is-active');
   });
+
+  // ページ内スクロール
+  $(function () {
+    // ヘッダーの高さ取得
+    const headerHeight = $(".js-header").height();
+    $('a[href^="#"]').click(function () {
+      const speed = 600;
+      let href = $(this).attr("href");
+      let target = $(href == "#" || href == "" ? "html" : href);
+      // ヘッダーの高さ分下げる
+      let position = target.offset().top - headerHeight;
+      $("body,html").animate({ scrollTop: position }, speed, "swing");
+      return false;
+    });
+  });
 });
+
 var swiper = new Swiper(".mv__js-swiper", {
   direction: "vertical",
-  //　縦方向
+  // 縦方向
   loop: true,
   speed: 3000,
   allowTouchMove: false,
