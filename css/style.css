@@ -1500,7 +1500,7 @@ body.is-active {
 	height: 7px;
 	margin-left: 10px;
 	position: absolute;
-	top: 0;
+	top: 1px;
 	transform: rotate(135deg);
 	width: 7px;
 }
